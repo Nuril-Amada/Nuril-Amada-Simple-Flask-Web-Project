@@ -1,0 +1,10 @@
+#!/bin/sh
+'''exec' "/home/arielsulton/Documents/Stargazing Project/VScode Project/Kuliah - VScode/Semester 3/Pemrograman 3/Pertemuan 4 - Flask x Docker/flask-docker/rp_flask_board/venv/bin/python3" "$0" "$@"
+' '''
+# -*- coding: utf-8 -*-
+import re
+import sys
+from dotenv.__main__ import cli
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(cli())
